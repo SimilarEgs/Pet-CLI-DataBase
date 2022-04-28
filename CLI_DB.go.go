@@ -30,7 +30,7 @@ type memoryStorage struct { //DB
 	data map[int]employee
 }
 
-func newMemoryStorage() *memoryStorage { //function to initialize DB and map of slice
+func newMemoryStorage() *memoryStorage { //function to initialize the DB and slice map
 	Employees = make(map[int][]employee)
 	return &memoryStorage{
 		data: make(map[int]employee),
